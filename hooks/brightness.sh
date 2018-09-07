@@ -17,15 +17,15 @@ function brightness() {
 if [[ "$1" == period-changed ]]; then
     case "$3" in
         daytime)
-            percent=100
+            percent=90
             case $2 in
                 transition)
                     brightness $fade_time --inc ;;
-                none)
+                night|none)
                     brightness
             esac ;;
         transition)
-            percent=70
+            percent=60
             case $2 in
                 daytme)
                     brightness $fade_time --dec ;;
@@ -35,11 +35,11 @@ if [[ "$1" == period-changed ]]; then
                     brightness
             esac ;;
         night)
-            percent=40
+            percent=35
             case $2 in
                 transition)
                     brightness $fade_time --dec ;;
-                none)
+                day|none)
                     brightness
             esac
     esac
