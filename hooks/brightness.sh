@@ -27,7 +27,7 @@ if [[ "$1" == period-changed ]]; then
         transition)
             percent=60
             case $2 in
-                daytme)
+                daytime)
                     brightness $fade_time --dec ;;
                 night)
                     brightness $fade_time --inc ;;
