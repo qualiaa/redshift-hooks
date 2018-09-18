@@ -19,7 +19,7 @@ The default brightnesses for day, transition and night are 90, 60, 35, and the
 default fade time is one hour. If you wish to alter them, you can find them at
 the top of the script.
 
-### Using `acpi-backlight`
+### Using `acpi-brightness`
 
 By default, `brightness.sh` uses
 [`acpi-brightness`](//github.com/qualiaa/acpi-brightness). If using it, you will
