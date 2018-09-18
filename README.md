@@ -48,7 +48,7 @@ However, I have not tested this as `xbacklight` does not work on my system.
 
 Live-reload terminal colorscheme according to time of day.
 
-By default, this switches between solarized-light and solarized dark
+By default, this switches between solarized-light and solarized dark.
 
 ### With URxvt
 
@@ -58,7 +58,7 @@ By default, this switches between solarized-light and solarized dark
 * **Add `#include ".Xresources.d/solarized"` to `.Xresources` file**
 * (optional) **Copy `dircolors.ansi-dark` from 
 [seebi/dircolors-solarized](//github.com/seebi/dircolors-solarized/) to 
-`~/.dircolors.ansi-dark`, and the same for `dircolors.ansi-light`.**
+`~/.dircolors.ansi-dark`, and the same for `dircolors.ansi-light`**
 
 ### With other terminals
 
