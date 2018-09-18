@@ -14,8 +14,8 @@ function brightness() {
     "$brightness" -t $seconds $cond $percent
 }
 
-if [[ "$1" == period-changed ]]; then
-    case "$3" in
+if [[ $1 == period-changed ]]; then
+    case $3 in
         daytime)
             percent=90
             case $2 in

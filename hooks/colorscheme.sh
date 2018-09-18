@@ -25,9 +25,9 @@ function solarized_dark() {
     update_terminal
 }
 
-if [[ "$1" == period-changed ]]; then
+if [[ $1 == period-changed ]]; then
     echo $@
-    case "$3" in
+    case $3 in
         daytime)
             solarized_light
             ;;
