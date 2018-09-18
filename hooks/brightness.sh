@@ -2,7 +2,7 @@
 
 set -eu
 
-exec >> ~/.redshift_log 2>&1
+exec >> ~/.redshift-hooks.log 2>&1
 
 # path to github.com/qualiaa/acpi-brightness script
 readonly brightness=$HOME/usr/bin/brightness 

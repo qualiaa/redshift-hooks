@@ -2,7 +2,7 @@
 
 set -eu
 
-exec >> ~/.redshift_log 2>&1
+exec >> ~/.redshift-hooks.log 2>&1
 
 readonly colorscheme_file="$HOME/.Xresources.d/solarized"
 
