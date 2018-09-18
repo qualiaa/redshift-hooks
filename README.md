@@ -48,13 +48,13 @@ However, I have not tested this as `xbacklight` does not work on my system.
 
 Live-reload terminal colorscheme according to time of day.
 
-By default, this switches between solarized-light and solarized dark.
+By default, this switches between solarized light and solarized dark.
 
 ### With URxvt
 
 * **Install 
 [`urxvt-config-reload`](//github.com/qualiaa/urxvt-config-reload)**
-* **Copy `Xresources.d` to `~/.Xresources.d`**
+* **Copy `Xresources.d` to your `~/.Xresources.d`**
 * **Add `#include ".Xresources.d/solarized"` to `.Xresources` file**
 * (optional) **Copy `dircolors.ansi-dark` from 
 [seebi/dircolors-solarized](//github.com/seebi/dircolors-solarized/) to 
@@ -64,8 +64,8 @@ By default, this switches between solarized-light and solarized dark.
 
 This currently only works for URxvt using
 [`urxvt-config-reload`](//github.com/qualiaa/urxvt-config-reload), though you
-may be able to rewrite the `update_terminal` to work with your terminal of
-choice.
+may be able to rewrite the `update_terminal()` function to work with your
+terminal of choice.
 
 Note that for best behaviour you need to change the colorscheme of running
 terminals, and also the global configuration for new terminals. Some terminals
