@@ -32,7 +32,7 @@ if [ "$1" = "period-changed" ]; then
             solarized_light
             ;;
         transition)
-            if [[ "$2" == none ]]; then
+            if [ "$2" = "none" ]; then
                 solarized_light
             fi
             ;;
