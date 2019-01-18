@@ -35,7 +35,7 @@ If you wish to use `xbacklight`, you will need to replace the `brightness`
 function with something like
 
 ```sh
-function brightness() {
+brightness() {
     local seconds=${1:-0}
     local steps=$((seconds * 100))
     xbacklight -time $((seconds*1000)) -set $percent
