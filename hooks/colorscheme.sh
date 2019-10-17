@@ -26,7 +26,7 @@ function solarized_dark() {
 }
 
 if [[ $1 == period-changed ]]; then
-    echo $@
+    echo $(date +"%y-%m-%d %H:%M:%S") $@
     case $3 in
         daytime)
             solarized_light
