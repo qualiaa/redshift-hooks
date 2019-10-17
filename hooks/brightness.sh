@@ -13,13 +13,13 @@ readonly transition_brightness=60
 readonly night_brightness=35
 
 
-function brightness() {
+brightness() {
     local seconds=${1:-0}
     local cond=${2:-}
     "$brightness" -t $seconds $cond $percent
 }
 
-if [[ $1 == period-changed ]]; then
+if [ $1 = "period-changed" ]; then
     case $3 in
         daytime)
             percent=$day_brightness
