@@ -9,6 +9,9 @@ readonly colorscheme_file="$HOME/.Xresources.d/solarized"
 update_terminal() {
     xrdb -merge "$colorscheme_file"
     pkill -SIGUSR1 urxvt
+    if command i3-msg 2>/dev/null; then
+        i3-msg reload
+    fi
 }
 
 solarized_light() {
@@ -32,7 +35,7 @@ if [ "$1" = period-changed ]; then
             solarized_light
             ;;
         transition)
-            if [ "$2" == none ]; then
+            if [ "$2" = none ]; then
                 solarized_light
             fi
             ;;
