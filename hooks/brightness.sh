@@ -48,7 +48,7 @@ if [ $1 = "period-changed" ]; then
             case $2 in
                 transition)
                     brightness $fade_time --dec ;;
-                day|none)
+                daytime|none)
                     brightness ;;
                 *)
                     echo "Unrecognised: $2"
