@@ -10,7 +10,7 @@ update_terminal() {
     xrdb -merge "$colorscheme_file"
     pkill -SIGUSR1 urxvt
     if command i3-msg 2>/dev/null; then
-        i3-msg reload
+        i3-msg reload 2>/dev/null
     fi
 }
 
