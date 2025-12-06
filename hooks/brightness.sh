@@ -3,6 +3,7 @@
 set -eu
 
 exec >> ~/.redshift-hooks.log 2>&1
+echo calling $0
 
 # path to github.com/qualiaa/acpi-brightness script
 readonly brightness=$HOME/usr/bin/brightness 
