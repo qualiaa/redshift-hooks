@@ -6,3 +6,5 @@
 #define S_base1         #93a1a1
 #define S_base2         #eee8d5
 #define S_base3         #fdf6e3
+
+#include "solarized-common"
