@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/bin/sh
 
 set -eu
 
@@ -41,5 +41,6 @@ if [ "$1" = period-changed ]; then
             ;;
         night)
             solarized_dark
+            ;;
     esac
 fi
