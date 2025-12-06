@@ -6,12 +6,12 @@ exec >> ~/.redshift-hooks.log 2>&1
 echo calling $0
 
 # path to github.com/qualiaa/acpi-brightness script
-readonly brightness=$HOME/usr/bin/brightness 
+readonly brightness=$HOME/usr/bin/brightness
 
 readonly fade_time=$(( 60*60 ))
-readonly day_brightness=90
-readonly transition_brightness=60
-readonly night_brightness=35
+readonly day_brightness=30
+readonly transition_brightness=20
+readonly night_brightness=15
 
 
 brightness() {
